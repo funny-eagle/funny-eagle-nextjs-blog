@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Funny Eagle Blog',
   author: 'Jason Yang',
   headerTitle: 'Funny Eagle Blog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: '探索技术成长路，品味生活乐无边。',
   language: 'cn-zh',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
