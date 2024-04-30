@@ -1,3 +1,57 @@
+build之后生成并导出静态html/css/js文件，需要在next.config.js中增加如下代码
+```
+    output: 'export',
+    images: {
+      unoptimized: true,
+    },
+```
+完整示例如下：
+```
+/**
+ * @type {import('next/dist/next-server/server/config').NextConfig}
+ **/
+module.exports = () => {
+  const plugins = [withContentlayer, withBundleAnalyzer]
+  return plugins.reduce((acc, next) => next(acc), {
+    reactStrictMode: true,
+    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+    eslint: {
+      dirs: ['app', 'components', 'layouts', 'scripts'],
+    },
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'picsum.photos',
+        },
+      ],
+    },
+    async headers() {
+      return [
+        {
+          source: '/(.*)',
+          headers: securityHeaders,
+        },
+      ]
+    },
+    webpack: (config, options) => {
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      })
+
+      return config
+    },
+    output: 'export',
+    images: {
+      unoptimized: true,
+    },
+  })
+}
+
+```
+
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog
