@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
           <Link href="https://beian.miit.gov.cn/">
-            蜀ICP备2023036051号-1
+            `蜀ICP备2023036051号-1`
           </Link>
         </div>
       </div>
