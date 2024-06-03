@@ -9,7 +9,7 @@ tags: ['coding']
 > 上一篇[JSON Web Token 入门简介](http://www.funnyeagle.cn/Introduction-to-jwt/)中，我们了解了什么是 JWT 以及使用场景等。本示例项目中，我们会搭建一个`spring-boot` 应用，利用 `JWT` 身份验证来保护公开的 `REST API`。该项目没有使用数据库，用硬编码的用户名和密码进行用户身份验证。只有客户端发起携带有效的 `JSON Web Token` （JWT） 请求时，它才能使用此 API。
 
 项目类图如下：
-![jwt-uml](./images/jwt-uml.png)
+![jwt-uml](/images/jwt-uml.png)
 
 就这么几个类，下面直接开始吧！
 
@@ -594,13 +594,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 启动项目，使用postman请求`/authenticate`接口
 
-![auth-api](./images/auth-api.jpg)
+![auth-api](/images/auth-api.jpg)
 
 > TIP: 如果`/authenticate`接口抛出异常 `ClassNotFoundException: javax.xml.bind.DatatypeConverter`，将JDK版本修改为8即可。
 
 
 获取到token之后，在/hello请求的Header中添加 Authorization，Value的格式为 `Bearer TOKEN` Bearer后面有个空格。如图。
-![hello-api](./images/hello-api.jpg)
+![hello-api](/images/hello-api.jpg)
 
 完整项目源码：https://github.com/funny-eagle/jwt-example
 

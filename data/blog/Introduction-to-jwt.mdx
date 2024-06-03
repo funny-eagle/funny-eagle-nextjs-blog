@@ -27,7 +27,7 @@ TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
 
 在 [https://jwt.io/#debugger-io](https://jwt.io/#debugger-io) 进行解码后如下图所示，**Header** 中指定了使用`HS256`算法进行签名，令牌类型为JWT；**Payload**中包含了sub、name、admin信息；**Signature**中， 使用header和payload以及特定的`secret`来生成签名。
 
-![image-20231114171718443.png](./images/image-20231114171718443.png)
+![image-20231114171718443.png](/images/image-20231114171718443.png)
 
 
 - **Header**：通常由令牌的类型和签名算法两部分组成，经过对该`JSON`进行Base64Url编码后形成第一个元素。
@@ -49,7 +49,7 @@ TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
 
 ## 4. JWT 工作流程
 
-![1269fc4dd4a144b5a001f35b4a7804d9.png](./images/1269fc4dd4a144b5a001f35b4a7804d9.png)
+![1269fc4dd4a144b5a001f35b4a7804d9.png](/images/1269fc4dd4a144b5a001f35b4a7804d9.png)
 
 首先客户端发送带有用户名和密码的Post请求。服务端验证身份成功后，生成JWT返回给客户端。后续所有的请求中，客户端都会在Header中带上这个toekn（JWT），服务端通过token验证用户身份，返回对应的响应数据。
 

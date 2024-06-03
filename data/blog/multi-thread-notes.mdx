@@ -264,7 +264,7 @@ public class YieldTest {
 
 先来看看线程池的主要处理流程
 
-![线程池的主要处理流程](./images/线程池的主要处理流程.png)
+![线程池的主要处理流程](/images/线程池的主要处理流程.png)
 
 从上图可以看出，使用者提交一个任务后，线程池的处理流程如下：
 
@@ -277,7 +277,7 @@ public class YieldTest {
 
 ThreadPoolExecutor执行示意图
 
-![thread-pool-executor](./images/ThreadPoolExecutor执行示意图.png)
+![thread-pool-executor](/images/ThreadPoolExecutor执行示意图.png)
 
 1. 如果当前运行的线程数小于corePoolSize，则创建新的线程来执行任务（执行这一步骤需要获取全局锁）
 2. 如果运行的线程数等于或者大于corePoolSize，则将任务加入BlockingQueue

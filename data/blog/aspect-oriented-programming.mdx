@@ -13,13 +13,13 @@ tags: ['coding']
 
 面向切面编程（aspect-oriented programming），是一种将横切关注点与业务逻辑分离的编程方式。每个横切关注点都集中在一个地方，而不是分散在多处代码中。这样使我们的服务模块更加简洁，因为它们只包含了主要关注点的代码，而次要的功能或者说辅助的功能被转移到切面中了。
 
-![aop-demo](./images/aop-1.png) 
+![aop-demo](/images/aop-1.png) 
 
 上图表示划分为三个服务模块的应用，每个模块提供相应的服务，而且这些模块都需要类似的辅助功能，例如日志、安全、事务等等。我们并不想在各个模块中写重复的日志、安全、事务的代码，那么就可以使用选用切面这个方案，来解决这个问题。
 
 ## AOP 术语
 
-![aop-demo](./images/aop-2.png)
+![aop-demo](/images/aop-2.png)
 
 - `advice` - 通知
 
@@ -55,7 +55,7 @@ tags: ['coding']
 
 AOP 就是使用代理模式实现的，其中的代理类就相当于AOP中的切面。
 
-![aop-demo](./images/aop-3.png)
+![aop-demo](/images/aop-3.png)
 
 ### 静态代理
 
@@ -396,9 +396,9 @@ Spring 提供了4种 `AOP` 的支持，基于代理的经典SpringAOP，纯POJO�
 
 Audience类使用`@Aspect`注解进行了标注。该注解表明Audience不仅仅是一个POJO，还是一个切面。Audience类中的方法都使用注解来定义切面的具体行为。Audience有四个方法，定义了一个观众在观看演出时可能会做的事情。在演出之前，观众要就坐（takeSeats()）并将手机调至静音状态（silenceCellPhones()）。如果演出很精彩的话，观众应该会鼓掌喝彩（applause()）。不过，如果演出没有达到观众预期的话，观众会要求退款（demandRefund()）。
 
-![aspect-execution](./images/aspect-execution.png)
+![aspect-execution](/images/aspect-execution.png)
 
-![aspect-annotation](./images/aspect-annotation.png)
+![aspect-annotation](/images/aspect-annotation.png)
 
 #### Advice的5种注解
 
@@ -414,7 +414,7 @@ Audience类使用`@Aspect`注解进行了标注。该注解表明Audience不仅�
 
 @Pointcut 声明使用频繁的切点表达式后，在通知注解中引用即可
 
-![pointcut](./images/pointcut.png)
+![pointcut](/images/pointcut.png)
 
 ## 总结
 
@@ -429,11 +429,11 @@ Audience类使用`@Aspect`注解进行了标注。该注解表明Audience不仅�
 
 - Spring 实战（第4版）
 
-  ![spring-in-action](./images/spring-in-action.png)
+  ![spring-in-action](/images/spring-in-action.png)
 
 - Head First 设计模式
 
-  ![head-first-dp](./images/head-first-design-pattern.png)
+  ![head-first-dp](/images/head-first-design-pattern.png)
 
 - https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E4%BE%A7%E9%9D%A2%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1
 
