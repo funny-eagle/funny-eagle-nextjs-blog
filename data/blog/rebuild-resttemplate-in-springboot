@@ -1,0 +1,9 @@
+---
+title: "在Springboot中重建RestTemplate"
+date: "2024-06-03 16:19:48"
+summary: "在Springboot中重建RestTemplate"
+tags: ['coding']
+draft: true
+---
+
+最近有个需求，需要根据配置来
