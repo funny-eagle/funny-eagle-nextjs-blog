@@ -1,14 +1,14 @@
 ---
-title: "在Springboot中重建RestTemplate"
+title: "在Springboot中重建RestTemplate Bean"
 date: "2024-06-03 18:43:48"
-summary: "在Springboot中重建RestTemplate"
+summary: "Spring Bean 花样玩法，监听配置变化后销毁并重新注册Bean"
 tags: ['coding', 'java']
 draft: false
 ---
 
 最近有个需求，用户希望RestTemplate能够绕过ssl证书验证，直接访问目标地址。虽然这并不安全，但是作为开发人员，只能有求必应啊。
 
-所以需要设计一个开关，是否忽略ssl验证，默认为false。而且配置得动态刷新，也就是说，一旦修改了配置，就要重新生成一个RestTemplate。
+需要设计一个开关，是否忽略ssl验证，默认为false。而且配置得动态刷新，也就是说，一旦修改了配置，就要重新生成一个RestTemplate。
 
 实现思路如下：
 
