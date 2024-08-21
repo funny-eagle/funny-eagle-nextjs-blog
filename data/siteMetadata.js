@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Funny Eagle Blog',
   author: 'Jason Yang',
   headerTitle: 'Funny Eagle Blog',
-  description: '探索技术，品味生活。',
+  description: '技术探秘之旅，生活感悟之行。',
   language: 'cn-zh',
   theme: 'system', // system, dark or light
   siteUrl: 'https://funnyeagle.cn',
