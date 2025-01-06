@@ -4,7 +4,7 @@ const siteMetadata = {
   author: 'Jason Yang',
   headerTitle: 'Funny Eagle Blog',
   description: '技术探秘之旅，生活感悟之行。',
-  language: 'cn-zh',
+  language: 'cn-ZH',
   theme: 'system', // system, dark or light
   siteUrl: 'https://funnyeagle.cn',
   siteRepo: 'https://github.com/funny-eagle/funny-eagle-nextjs-blog',
@@ -82,7 +82,7 @@ const siteMetadata = {
     kbarConfig: {
       searchDocumentsPath: 'search.json', // path to load documents to search
     },
-    // provider: 'algolia',
+    // provider: 'algolia',Ï
     // algoliaConfig: {
     //   // The application ID provided by Algolia
     //   appId: 'R2IYF7ETH7',
