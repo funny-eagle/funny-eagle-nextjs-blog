@@ -3,22 +3,16 @@ const siteMetadata = {
   title: 'Funny Eagle Blog',
   author: 'Jason Yang',
   headerTitle: 'Funny Eagle Blog',
-  description: '技术探秘之旅，生活感悟之行。',
+  description: '探索技术奥秘，感悟生活真谛',
   language: 'cn-ZH',
   theme: 'system', // system, dark or light
   siteUrl: 'https://funnyeagle.cn',
   siteRepo: 'https://github.com/funny-eagle/funny-eagle-nextjs-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  //mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'yangjinlong86@gmail.com',
   github: 'https://github.com/funny-eagle',
   twitter: 'https://twitter.com/yangjinlong86',
-  // facebook: 'https://facebook.com',
-  // youtube: 'https://youtube.com',
-  // linkedin: 'https://www.linkedin.com',
-  // threads: 'https://www.threads.net',
-  // instagram: 'https://www.instagram.com',
   locale: 'cn-ZH',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
