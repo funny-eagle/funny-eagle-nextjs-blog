@@ -61,7 +61,7 @@ spring:
 
 Spring Cloud Gateway 使用 Spring WebFlux 的 `HandlerMapping` 进行路由匹配，并内置多种 **Route Predicate Factories**。这些断言通过逻辑“与”组合，支持编程或配置文件方式定义路由规则。
 
-#### 4.1. Before 路由断言工厂 
+#### 4.1. Before 路由断言工厂
 
 匹配指定时间之前的请求：
 
@@ -84,7 +84,9 @@ Java 配置：
 ```
 
 #### 4.2. Between 路由断言工厂  
+
 匹配两个时间点之间的请求：
+
 ```yaml
 predicates:
   - Between=2017-09-10T17:42:47.789-07:00[America/Alaska], 2017-09-11T17:42:47.789-07:00[America/Alaska]
@@ -123,6 +125,7 @@ predicates:
 ```
 
 Java 配置：
+
 ```java
 .route(r -> r.host("**.baeldung.com").id("host_route").uri("http://baeldung.com"))
 ```
@@ -142,9 +145,6 @@ Java 配置：
 .route(r -> r.method("GET").id("method_route").uri("http://baeldung.com"))
 ```
 
----
-
-
 #### 4.6. Path 路由断言工厂  
 
 匹配路径符合 `PathMatcher` 模式的请求：
@@ -160,15 +160,17 @@ Java 配置：
 .route(r -> r.path("/articles/"+articleId).id("path_route").uri("http://baeldung.com"))
 ```
 
-#### 4.7. Query 路由断言工厂 
+#### 4.7. Query 路由断言工厂
 
 匹配包含指定查询参数的请求：
+
 ```yaml
 predicates:
   - Query=articleId, \w
 ```
 
 Java 配置：
+
 ```java
 .route(r -> r.query("articleId", "\w").id("query_route").uri("http://baeldung.com"))
 ```
@@ -192,7 +194,7 @@ Java 配置：
 
 WebFilter 用于修改请求或响应。Spring Cloud Gateway 提供多种内置工厂：
 
-#### 5.1. AddRequestHeader WebFilter 工厂 
+#### 5.1. AddRequestHeader WebFilter 工厂
 
 添加请求头：
 
@@ -296,4 +298,6 @@ Spring Cloud Gateway 提供了强大的网关和代理功能，支持动态路�
 
 #### 参考文献
 
+```text
 https://www.baeldung.com/spring-cloud-gateway
+```
