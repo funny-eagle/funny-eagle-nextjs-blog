@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Funny Eagle Blog',
+  title: 'Funny Eagle',
   author: 'Jason Yang',
-  headerTitle: 'Funny Eagle Blog',
-  description: '探索技术奥秘，感悟生活真谛',
+  headerTitle: 'Funny Eagle',
+  description: '不知怎么选技术书时就挑薄的。起码不会太贵，且你能看完。',
   language: 'cn-ZH',
   theme: 'system', // system, dark or light
   siteUrl: 'https://funnyeagle.cn',
