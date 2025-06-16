@@ -11,7 +11,7 @@ export default function Comments({ slug }: { slug: string }) {
    * loadComments：表示是否加载评论区。
    * setLoadComments：用于更新 loadComments 的函数。
    */
-  const [loadComments, setLoadComments] = useState(false)
+  const [loadComments, setLoadComments] = useState(true)
 
   // 检查站点元数据中是否配置了评论系统的 provider。如果没有配置，则组件不渲染任何内容
   if (!siteMetadata.comments?.provider) {
