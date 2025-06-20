@@ -12,7 +12,6 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'yangjinlong86@gmail.com',
   github: 'https://github.com/funny-eagle',
-  twitter: 'https://twitter.com/yangjinlong86',
   locale: 'cn-ZH',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
